@@ -6,17 +6,14 @@ using System.Threading.Tasks;
 
 namespace CyklZawodówTriathlonowych
 {
-    class Zawody
+    class Zawody : Miejsca
     {
         string miejsce;
         string data;
         int iloscNumerowStartowych;
 
-        public Zawody(string miejsce, string data, int iloscNumerowStartowych)
+        public Zawody(string adres, string wielkosc, int maxStartujacych) : base(adres, wielkosc, maxStartujacych)
         {
-            this.miejsce = miejsce;
-            this.data = data;
-            this.iloscNumerowStartowych = iloscNumerowStartowych;
         }
 
         enum DlugoscTrasy{Rekrut, Weteran }
