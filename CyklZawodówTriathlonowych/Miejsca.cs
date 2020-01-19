@@ -8,9 +8,9 @@ namespace CyklZawodówTriathlonowych
 {
     class Miejsca
     {
-        string adres;
-        string wielkosc;
-        int maxStartujacych;
+        private string adres;
+        private string wielkosc;
+        private int maxStartujacych;
 
         public Miejsca(string adres, string wielkosc, int maxStartujacych)
         {
