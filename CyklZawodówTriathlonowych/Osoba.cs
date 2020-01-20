@@ -8,11 +8,11 @@ namespace CyklZawodówTriathlonowych
 {
     class Osoba
     {
-        private string imie;
-        private string nazwisko;
-        private string nr_tel;
-        private string adres;
-        private int rok_ur;
+        protected string imie;
+        protected string nazwisko;
+        protected string nr_tel;
+        protected string adres;
+        protected int rok_ur;
 
         public Osoba(string imie, string nazwisko, string nr_tel, string adres, int rok_ur)
         {
@@ -28,20 +28,74 @@ namespace CyklZawodówTriathlonowych
             uczestnik, wolontariusz, pracownik
         }      
 
-        public string PrzekazInfo
+        public string Imie
         {
             get
             {
                 return imie;
             }
+            set
+            {
+                imie = value;
+            }
            
         }
-   
-
-
-        public static Osoba Create()
+        public string Nazwisko
         {
-            return new Osoba("Jan", "Kowalski", 506213987,"Filipa 3/11 olsztyn", 2000);
+            get
+            {
+                return nazwisko;
+            }
+            set
+            {
+                nazwisko = value;
+            }
+
         }
+        public string Adrea
+        {
+            get
+            {
+                return adres;
+            }
+            set
+            {
+                adres = value;
+            }
+
+        }
+        public string NrTel
+        {
+            get
+            {
+                return nr_tel;
+            }
+            set
+            {
+                nr_tel = value;
+            }
+
+        }
+        public int Wiek
+        {
+            get
+            {
+                int wiek=2020-rok_ur;
+                return wiek;
+            }
+            set
+            {
+                Wiek = value;
+            }
+
+        }
+
+
+
+
+        /*public static Osoba Create()
+         {
+             return new Osoba("Jan", "Kowalski", 506213987","Filipa 3/11 olsztyn", 2000);
+         }*/
     }
 }

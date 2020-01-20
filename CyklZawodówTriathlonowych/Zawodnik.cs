@@ -11,7 +11,7 @@ namespace CyklZawodówTriathlonowych
         int nrStartowy;
         int liczbaStartow;
         bool plec;  
-        public Zawodnik(string imie, string nazwisko, int nr_tel, string adres, int rok_ur) : base(imie, nazwisko, nr_tel, adres, rok_ur)
+        public Zawodnik(string imie, string nazwisko, string nr_tel, string adres, int rok_ur) : base(imie, nazwisko, nr_tel, adres, rok_ur)
         {
         }
     }
