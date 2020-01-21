@@ -43,8 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="interfejsy\IZawodnika.cs" />
+    <Compile Include="interfejsy\IOrganizator.cs" />
+    <Compile Include="interfejsy\IZawody.cs" />
     <Compile Include="Miejsca.cs" />
-    <Compile Include="Wolontariusz.cs" />
+    <Compile Include="Organizator.cs" />
     <Compile Include="Osoba.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
