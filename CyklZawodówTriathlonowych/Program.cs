@@ -10,7 +10,7 @@ namespace CyklZawodówTriathlonowych
     {
         static void Main(string[] args)
         {
-            Osoba osoba1 = new Osoba("Jan", "Kowalski", "506213987", "Filipa 3/11 olsztyn", 2000);
+            Osoba osoba1 = new Zawodnik("Jan", "Kowalski", "506213987", "Filipa 3/11 olsztyn", 2000);
             Console.WriteLine(osoba1.Imie);
 
 

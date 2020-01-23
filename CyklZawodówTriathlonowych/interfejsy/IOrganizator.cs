@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CyklZawodówTriathlonowych.interfejsy
+namespace CyklZawodówTriathlonowych
 {
     interface IOrganizator
     {
         void WyswietlDaneOsobowe();
-        void dodajZawody();
+    
     }
 }
