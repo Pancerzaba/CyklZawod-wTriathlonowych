@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace CyklZawodówTriathlonowych
 {
-    interface IZawody:Zawody
+    interface IZawody
     {
         void WyswietlZawodnikow();
 
-        void pokazMiejsce();
+        void PokazMiejsce();
     }
 }

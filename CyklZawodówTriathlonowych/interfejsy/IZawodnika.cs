@@ -9,8 +9,9 @@ namespace CyklZawodówTriathlonowych
     interface IZawodnika
     {
         void WyswietlDaneOsobowe();
-        void zapiszSie();
-        void zobaczZawody();
+        void ZapiszSie();
+        void ZobaczZawody();
+        void IleLat();
 
 
     }

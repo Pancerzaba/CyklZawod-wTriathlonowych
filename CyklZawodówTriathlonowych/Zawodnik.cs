@@ -16,14 +16,20 @@ namespace CyklZawodówTriathlonowych
         }
         public void WyswietlDaneOsobowe()
         {
-
+            Console.WriteLine("Moje imie to {0}, nazwisko: {1}, nr telrfonu: {2}, adres {3}", imie, nazwisko, nr_tel, adres);
         }
-        public void zapiszSie()
+        public void ZapiszSie()
         {
-
+            Console.WriteLine("Zapisano na zawody");
         }
-        public void zobaczZawody()
+        public void ZobaczZawody()
         {
+            Console.WriteLine("Pokazuje zawody");
+        }
+        public void IleLat()
+        {
+            int wiek = DateTime.Now.Year - rok_ur;
+            Console.WriteLine("Mam {0} lat", wiek);
 
         }
     }

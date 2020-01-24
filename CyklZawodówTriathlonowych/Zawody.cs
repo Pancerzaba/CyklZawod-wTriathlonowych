@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace CyklZawodówTriathlonowych
 {
-    class Zawody : Miejsca, IZawody, IOrganizator, IZawodnika
+    class Zawody : Miejsca, IZawody
     {
-        string nazwaImprezy;
-        string miejsce;
-        string data;
-        int iloscNumerowStartowych;
-
+        protected string nazwaImprezy;
+        protected string miejsce;
+        protected string data;
+        protected int iloscNumerowStartowych;
+   
         public Zawody(string adres, string wielkosc, int maxStartujacych, string nazwaImprezy, string miejsce, string data, int iloscNumerowStartowych) : base(adres, wielkosc, maxStartujacych)
         {
             this.nazwaImprezy = nazwaImprezy;
@@ -25,27 +25,15 @@ namespace CyklZawodówTriathlonowych
 
         public void WyswietlZawodnikow()
         {
+            Console.WriteLine("Mamy {0} zawodnikow", iloscNumerowStartowych);
 
         }
-        public void pokazMiejsce()
+        public void PokazMiejsce()
         {
-
-        }
-        public void WyswietlDaneOsobowe()
-        {
-
+            Console.WriteLine("Pokazuje miejsce zawodów");
         }
 
-      
-        public void zapiszSie()
-        {
 
-        }
-        public void zobaczZawody()
-        {
-
-        }
-
-        enum DlugoscTrasy{Rekrut, Weteran }
+        
     }
 }

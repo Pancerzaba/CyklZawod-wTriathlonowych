@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CyklZawodówTriathlonowych
 {
-    abstract class Osoba
+    class Osoba
     {
         protected string imie;
         protected string nazwisko;

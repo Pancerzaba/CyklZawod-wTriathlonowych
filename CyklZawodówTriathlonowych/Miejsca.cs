@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CyklZawodówTriathlonowych
 {
-    class Miejsca
+    abstract class Miejsca
     {
         private string adres;
         private string wielkosc;
